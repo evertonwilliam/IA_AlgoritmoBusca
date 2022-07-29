@@ -66,6 +66,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\CAdjacente.cs" />
+    <Compile Include="controller\CCidade.cs" />
     <Compile Include="controller\ConnDBASqlite.cs" />
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
