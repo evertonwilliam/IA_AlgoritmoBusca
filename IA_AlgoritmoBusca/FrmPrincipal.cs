@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IA_AlgoritmoBusca.controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace IA_AlgoritmoBusca
         public FrmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void BtLoad_Click(object sender, EventArgs e)
+        {
+            ConnDBASqlite conn = new ConnDBASqlite();
+            BtLoad.Enabled = false;
         }
     }
 }
