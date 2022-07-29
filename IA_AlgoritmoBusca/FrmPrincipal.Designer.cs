@@ -1,6 +1,6 @@
 ﻿namespace IA_AlgoritmoBusca
 {
-    partial class Form1
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 493);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(471, 209);
+            this.Name = "FrmPrincipal";
+            this.Text = "Estudo dos Algorítmos de Busca";
             this.ResumeLayout(false);
 
         }
