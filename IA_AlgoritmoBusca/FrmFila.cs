@@ -46,7 +46,6 @@ namespace IA_AlgoritmoBusca
                     {
                         LstBox.Items.Add(cid.NomeCidade);
                     }
-
                 }
             }catch (Exception ex)
             {
@@ -66,7 +65,6 @@ namespace IA_AlgoritmoBusca
                     {
                         LstBox.Items.Add(cid.NomeCidade);
                     }
-
                 }
             }catch (Exception ex)
             {

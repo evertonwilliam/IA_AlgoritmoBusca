@@ -70,11 +70,18 @@
     <Compile Include="controller\CCidade.cs" />
     <Compile Include="controller\ConnDBASqlite.cs" />
     <Compile Include="extruct\Fila.cs" />
+    <Compile Include="extruct\Pilha.cs" />
     <Compile Include="FrmFila.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFila.Designer.cs">
       <DependentUpon>FrmFila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPilha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPilha.Designer.cs">
+      <DependentUpon>FrmPilha.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -88,6 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmFila.resx">
       <DependentUpon>FrmFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPilha.resx">
+      <DependentUpon>FrmPilha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>

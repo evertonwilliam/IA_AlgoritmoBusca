@@ -116,6 +116,7 @@
             this.BtPilha.TabIndex = 2;
             this.BtPilha.Text = "Pilha";
             this.BtPilha.UseVisualStyleBackColor = true;
+            this.BtPilha.Click += new System.EventHandler(this.BtPilha_Click);
             // 
             // BtFila
             // 

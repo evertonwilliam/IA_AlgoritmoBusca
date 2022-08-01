@@ -37,31 +37,12 @@ namespace IA_AlgoritmoBusca
         {
             FrmFila frmFila = new FrmFila();
             frmFila.ShowDialog();
+        }
 
-
-            /*Fila fila = new Fila(10);
-            Cidade cidade = new Cidade();
-            CCidade nomeCidade = new CCidade();
-            cidade = nomeCidade.GetCidade("Votuporanga");
-            this.fila.Enfileirar(cidade);
-
-            cidade = nomeCidade.GetCidade("Fernandópolis");
-            this.fila.Enfileirar(cidade);
-
-            cidade = nomeCidade.GetCidade("Meridiano");
-            this.fila.Enfileirar(cidade);
-
-            cidade = nomeCidade.GetCidade("Vila Nova");
-            this.fila.Enfileirar(cidade);
-
-            cidade = nomeCidade.GetCidade("Carvalho");
-            this.fila.Enfileirar(cidade);
-
-            this.fila.Enfileirar(cidade);
-
-            this.fila.Desenfileirar();
-            this.fila.Desenfileirar();
-            */
+        private void BtPilha_Click(object sender, EventArgs e)
+        {
+            FrmPilha frmPilha = new FrmPilha();
+            frmPilha.ShowDialog(); 
         }
     }
 }
