@@ -55,5 +55,28 @@ namespace IA_AlgoritmoBusca.controller
                 throw ex;
             }
         }
+
+        public Cidade GetCidade(String nomeCidade)
+        {
+            try
+            {
+                SQLiteDataAdapter da = null;
+                DataTable dt = new DataTable();
+                Cidade cidade = new Cidade();
+                using (var cmd = conn.GetConnSQLite().CreateCommand())
+                {
+                    cmd.CommandText = "SELECT * FROM cidade WHERE NomeCidade = '" + nomeCidade + "' ";
+                    da = new SQLiteDataAdapter(cmd.CommandText,conn.GetConnSQLite());
+                    da.Fill(dt);
+                    cidade.IdCidade = Int32.Parse(dt.Rows[0]["IdCidade"].ToString());
+                    cidade.NomeCidade = dt.Rows[0]["NomeCidade"].ToString();
+
+                    return cidade;
+                }
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

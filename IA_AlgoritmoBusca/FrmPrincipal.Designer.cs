@@ -30,12 +30,12 @@
         {
             this.BtLoad = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtFila = new System.Windows.Forms.Button();
-            this.BtPilha = new System.Windows.Forms.Button();
-            this.BtProfundidade = new System.Windows.Forms.Button();
-            this.BtGuloso = new System.Windows.Forms.Button();
-            this.BtLargura = new System.Windows.Forms.Button();
             this.BtAEstrela = new System.Windows.Forms.Button();
+            this.BtLargura = new System.Windows.Forms.Button();
+            this.BtGuloso = new System.Windows.Forms.Button();
+            this.BtProfundidade = new System.Windows.Forms.Button();
+            this.BtPilha = new System.Windows.Forms.Button();
+            this.BtFila = new System.Windows.Forms.Button();
             this.GbFila = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -66,45 +66,15 @@
             this.panel1.Size = new System.Drawing.Size(640, 85);
             this.panel1.TabIndex = 1;
             // 
-            // BtFila
+            // BtAEstrela
             // 
-            this.BtFila.Enabled = false;
-            this.BtFila.Location = new System.Drawing.Point(92, 12);
-            this.BtFila.Name = "BtFila";
-            this.BtFila.Size = new System.Drawing.Size(81, 61);
-            this.BtFila.TabIndex = 1;
-            this.BtFila.Text = "Fila";
-            this.BtFila.UseVisualStyleBackColor = true;
-            // 
-            // BtPilha
-            // 
-            this.BtPilha.Enabled = false;
-            this.BtPilha.Location = new System.Drawing.Point(172, 12);
-            this.BtPilha.Name = "BtPilha";
-            this.BtPilha.Size = new System.Drawing.Size(81, 61);
-            this.BtPilha.TabIndex = 2;
-            this.BtPilha.Text = "Pilha";
-            this.BtPilha.UseVisualStyleBackColor = true;
-            // 
-            // BtProfundidade
-            // 
-            this.BtProfundidade.Enabled = false;
-            this.BtProfundidade.Location = new System.Drawing.Point(305, 13);
-            this.BtProfundidade.Name = "BtProfundidade";
-            this.BtProfundidade.Size = new System.Drawing.Size(81, 61);
-            this.BtProfundidade.TabIndex = 3;
-            this.BtProfundidade.Text = "Profundo";
-            this.BtProfundidade.UseVisualStyleBackColor = true;
-            // 
-            // BtGuloso
-            // 
-            this.BtGuloso.Enabled = false;
-            this.BtGuloso.Location = new System.Drawing.Point(467, 12);
-            this.BtGuloso.Name = "BtGuloso";
-            this.BtGuloso.Size = new System.Drawing.Size(81, 61);
-            this.BtGuloso.TabIndex = 4;
-            this.BtGuloso.Text = "Guloso";
-            this.BtGuloso.UseVisualStyleBackColor = true;
+            this.BtAEstrela.Enabled = false;
+            this.BtAEstrela.Location = new System.Drawing.Point(548, 12);
+            this.BtAEstrela.Name = "BtAEstrela";
+            this.BtAEstrela.Size = new System.Drawing.Size(81, 61);
+            this.BtAEstrela.TabIndex = 6;
+            this.BtAEstrela.Text = "A*";
+            this.BtAEstrela.UseVisualStyleBackColor = true;
             // 
             // BtLargura
             // 
@@ -116,15 +86,46 @@
             this.BtLargura.Text = "Largura";
             this.BtLargura.UseVisualStyleBackColor = true;
             // 
-            // BtAEstrela
+            // BtGuloso
             // 
-            this.BtAEstrela.Enabled = false;
-            this.BtAEstrela.Location = new System.Drawing.Point(548, 12);
-            this.BtAEstrela.Name = "BtAEstrela";
-            this.BtAEstrela.Size = new System.Drawing.Size(81, 61);
-            this.BtAEstrela.TabIndex = 6;
-            this.BtAEstrela.Text = "A*";
-            this.BtAEstrela.UseVisualStyleBackColor = true;
+            this.BtGuloso.Enabled = false;
+            this.BtGuloso.Location = new System.Drawing.Point(467, 12);
+            this.BtGuloso.Name = "BtGuloso";
+            this.BtGuloso.Size = new System.Drawing.Size(81, 61);
+            this.BtGuloso.TabIndex = 4;
+            this.BtGuloso.Text = "Guloso";
+            this.BtGuloso.UseVisualStyleBackColor = true;
+            // 
+            // BtProfundidade
+            // 
+            this.BtProfundidade.Enabled = false;
+            this.BtProfundidade.Location = new System.Drawing.Point(305, 13);
+            this.BtProfundidade.Name = "BtProfundidade";
+            this.BtProfundidade.Size = new System.Drawing.Size(81, 61);
+            this.BtProfundidade.TabIndex = 3;
+            this.BtProfundidade.Text = "Profundo";
+            this.BtProfundidade.UseVisualStyleBackColor = true;
+            // 
+            // BtPilha
+            // 
+            this.BtPilha.Enabled = false;
+            this.BtPilha.Location = new System.Drawing.Point(172, 12);
+            this.BtPilha.Name = "BtPilha";
+            this.BtPilha.Size = new System.Drawing.Size(81, 61);
+            this.BtPilha.TabIndex = 2;
+            this.BtPilha.Text = "Pilha";
+            this.BtPilha.UseVisualStyleBackColor = true;
+            // 
+            // BtFila
+            // 
+            this.BtFila.Enabled = false;
+            this.BtFila.Location = new System.Drawing.Point(92, 12);
+            this.BtFila.Name = "BtFila";
+            this.BtFila.Size = new System.Drawing.Size(81, 61);
+            this.BtFila.TabIndex = 1;
+            this.BtFila.Text = "Fila";
+            this.BtFila.UseVisualStyleBackColor = true;
+            this.BtFila.Click += new System.EventHandler(this.BtFila_Click);
             // 
             // GbFila
             // 

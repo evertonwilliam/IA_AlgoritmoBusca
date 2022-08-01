@@ -69,6 +69,7 @@
     <Compile Include="controller\CAdjacente.cs" />
     <Compile Include="controller\CCidade.cs" />
     <Compile Include="controller\ConnDBASqlite.cs" />
+    <Compile Include="extruct\Fila.cs" />
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
