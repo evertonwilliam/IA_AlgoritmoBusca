@@ -15,9 +15,10 @@ namespace IA_AlgoritmoBusca
 {
     public partial class FrmPrincipal : Form
     {
+        Fila fila = new Fila(10);
         public FrmPrincipal()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void BtLoad_Click(object sender, EventArgs e)
@@ -34,16 +35,33 @@ namespace IA_AlgoritmoBusca
 
         private void BtFila_Click(object sender, EventArgs e)
         {
-            Fila fila = new Fila(10);
+            FrmFila frmFila = new FrmFila();
+            frmFila.ShowDialog();
+
+
+            /*Fila fila = new Fila(10);
             Cidade cidade = new Cidade();
             CCidade nomeCidade = new CCidade();
             cidade = nomeCidade.GetCidade("Votuporanga");
+            this.fila.Enfileirar(cidade);
 
-            MessageBox.Show(cidade.NomeCidade);
+            cidade = nomeCidade.GetCidade("Fernandópolis");
+            this.fila.Enfileirar(cidade);
 
-            fila.Enfileirar(cidade);
-            
-            //MessageBox.Show(fila.GetNumeroElementos.ToString());
+            cidade = nomeCidade.GetCidade("Meridiano");
+            this.fila.Enfileirar(cidade);
+
+            cidade = nomeCidade.GetCidade("Vila Nova");
+            this.fila.Enfileirar(cidade);
+
+            cidade = nomeCidade.GetCidade("Carvalho");
+            this.fila.Enfileirar(cidade);
+
+            this.fila.Enfileirar(cidade);
+
+            this.fila.Desenfileirar();
+            this.fila.Desenfileirar();
+            */
         }
     }
 }

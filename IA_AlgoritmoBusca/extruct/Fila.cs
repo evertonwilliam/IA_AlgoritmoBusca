@@ -28,11 +28,11 @@ namespace IA_AlgoritmoBusca.extruct
         {
             if (!FilaCheia())
             {
-                if (this.fim == tamanho - 1)
+                if (this.fim == tamanho)
                 {
-                    this.fim = -1;
+                    this.fim = 0;
                 }
-                this.cidades[++fim] = cidade;
+                this.cidades[fim++] = cidade;
                 numeroElementos++;
             }
             else
@@ -45,6 +45,7 @@ namespace IA_AlgoritmoBusca.extruct
         {
             if (!FilaVazia())
             {
+                this.cidades[inicio] = null;
                 Cidade temp = cidades[inicio++];
                 if (inicio == tamanho)
                 {
@@ -77,6 +78,11 @@ namespace IA_AlgoritmoBusca.extruct
         public int GetNumeroElementos()
         {
             return numeroElementos;
+        }
+
+        public Cidade[] GetFila()
+        {
+            return cidades;
         }
     }
 }
