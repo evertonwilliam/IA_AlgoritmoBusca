@@ -36,8 +36,9 @@
             this.BtProfundidade = new System.Windows.Forms.Button();
             this.BtPilha = new System.Windows.Forms.Button();
             this.BtFila = new System.Windows.Forms.Button();
-            this.GbFila = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtLoad
@@ -127,26 +128,26 @@
             this.BtFila.UseVisualStyleBackColor = true;
             this.BtFila.Click += new System.EventHandler(this.BtFila_Click);
             // 
-            // GbFila
+            // pictureBox1
             // 
-            this.GbFila.Location = new System.Drawing.Point(0, 91);
-            this.GbFila.Name = "GbFila";
-            this.GbFila.Size = new System.Drawing.Size(820, 68);
-            this.GbFila.TabIndex = 3;
-            this.GbFila.TabStop = false;
-            this.GbFila.Text = "Processando a fila";
+            this.pictureBox1.Location = new System.Drawing.Point(0, 100);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(640, 224);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 357);
-            this.Controls.Add(this.GbFila);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estudo dos Algorítmos de Busca";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -161,7 +162,7 @@
         private System.Windows.Forms.Button BtProfundidade;
         private System.Windows.Forms.Button BtPilha;
         private System.Windows.Forms.Button BtFila;
-        private System.Windows.Forms.GroupBox GbFila;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

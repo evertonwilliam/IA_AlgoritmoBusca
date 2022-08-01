@@ -5,6 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * ALGORITMO FILA
+ * O PRIMEIRO DADO QUE ENTRA É O PRIMEIRO DADO A SAIR
+ */
+
 namespace IA_AlgoritmoBusca.extruct
 {
     internal class Fila
